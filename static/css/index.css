@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+}
+
+.saqr {
+    color: aliceblue;
+    transition: all .5s;
+}
+.saqr:hover {
+    background: darkviolet;
+    color: aliceblue;
+}
+
+.saqr-1 {
+    color: aliceblue;
+    background: darkviolet;
+    transition: all .5s;
+}
+
+.saqr-1:hover {
+    background: rgba(148, 0, 211, 0.445);
+    color: aliceblue;
+}
