@@ -34,18 +34,18 @@ $(document).ready(function(){
 });
 
 ///
-function closeNav() {
-    document.getElementById("menu-slide").style.width = "0%";
-}
-async function user_1() {
-            let user = await DiscordFetcher("929091583679283283", {
-                dynamic: true,
-                size: 1024,
-                format: "gif",
-                format: "png",
-                log: false,
-            });
-            document.getElementById("avatar-bot").src = user.avatar.url;
-            document.getElementById("username-bot").innerHTML = user.username
-        }
-user_1();
+// function closeNav() {
+//     document.getElementById("menu-slide").style.width = "0%";
+// }
+// async function user_1() {
+//             let user = await DiscordFetcher("929091583679283283", {
+//                 dynamic: true,
+//                 size: 1024,
+//                 format: "gif",
+//                 format: "png",
+//                 log: false,
+//             });
+//             document.getElementById("avatar-bot").src = user.avatar.url;
+//             document.getElementById("username-bot").innerHTML = user.username
+//         }
+// user_1();
