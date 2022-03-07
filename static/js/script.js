@@ -1,39 +1,39 @@
 // link
-  function openinvite() {
-  window.open('https://discord.com/oauth2/authorize?client_id=782642248416231436&scope=bot%20applications.commands&permissions=2151140424','_blank')
-  }
-  function opensupport() {
-    window.open('https://discord.gg/qDdkxyJvFp','_blank')
-    }
+//   function openinvite() {
+//   window.open('https://discord.com/oauth2/authorize?client_id=782642248416231436&scope=bot%20applications.commands&permissions=2151140424','_blank')
+//   }
+//   function opensupport() {
+//     window.open('https://discord.gg/qDdkxyJvFp','_blank')
+//     }
 // loading
 
-    var preloader = document.getElementById("loading");
+//     var preloader = document.getElementById("loading");
 
-    function myFunction(){
-        preloader.style.display = "none";
-    }
-// 
-$(document).ready(function(){
+//     function myFunction(){
+//         preloader.style.display = "none";
+//     }
 
-    $('.counter').each(function(){
+// $(document).ready(function(){
 
-        $(this).prop('counter',0).animate({
+//     $('.counter').each(function(){
 
-            counter : $(this).text()
+//         $(this).prop('counter',0).animate({
 
-        },{
-            duration : 3500,
-            easing : 'swing',
-            step : function (now){
-                $(this).text(Math.ceil(now) + '+')
-            }
+//             counter : $(this).text()
 
-        });
+//         },{
+//             duration : 3500,
+//             easing : 'swing',
+//             step : function (now){
+//                 $(this).text(Math.ceil(now) + '+')
+//             }
 
-    });
-});
+//         });
 
-///
+//     });
+// });
+
+// /
 // function closeNav() {
 //     document.getElementById("menu-slide").style.width = "0%";
 // }

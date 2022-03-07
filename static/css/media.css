@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1024px) {
+    .title::after {
+        transform: translateY(30px);
+    }
+    .saqr-footer-1 {
+        font-size: 5px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .title::after {
+        transform: translateY(21px);
+    }
+}
+/* 2 */
+@media only screen and (max-width: 705px) {
+    .title::after {
+        transform: translateY(20px);
+    }
+    .title::before {
+        transform: translateY(71px);
+    }
+}
+/* 3 */
+@media screen and (max-width: 450px) {
+    .title::before {
+        transform: translateY(59px);
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background: #110e0f
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkviolet;
+	border-radius: 100px;
+	transition: all 1s ease-in-out;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(108, 0, 155)
+}
