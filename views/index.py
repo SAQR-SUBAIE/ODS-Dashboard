@@ -8,7 +8,17 @@ def index_page():
     return render_template("index.html", saqr="97",title="ODS" )
 
 
+@index.route('/saqr')
+def main_page():
+    return render_template("main.html", saqr="97",title="ODS" )
 
+@index.route('/dashboard')
+def dashboard_page():
+    return render_template("dashboard.html", saqr="97",title="ODS" )
+
+@index.route('/reviews')
+def reviews_page():
+    return render_template("reviews.html", saqr="97",title="ODS" )
 
 
 
