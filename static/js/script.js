@@ -49,3 +49,35 @@
 //             document.getElementById("username-bot").innerHTML = user.username
 //         }
 // user_1();
+
+// google.charts.load('current', {'packages':['corechart']});
+// google.charts.setOnLoadCallback(drawChart);
+
+// function drawChart() {
+//     var data = google.visualization.arrayToDataTable([
+//     ['Year', 'Sales', 'Expenses'],
+//     ['2013',  1000,      400],
+//     ['2014',  1170,      460],
+//     ['2015',  660,       1120],
+//     ['2016',  1030,      540]
+//     ]);
+
+//     var options = {
+//     title: 'Company Performance',
+//     hAxis: {title: 'Year',  titleTextStyle: {color: 'rgb(39, 41, 52)'}},
+//     vAxis: {minValue: 0}
+//     };
+
+//     var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+//     chart.draw(data, options);
+// }
+
+var toastTrigger = document.getElementById('liveToastBtn')
+var toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+toastTrigger.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+})
+}

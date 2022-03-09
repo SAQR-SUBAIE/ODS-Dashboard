@@ -16,6 +16,15 @@ def main_page():
 def dashboard_page():
     return render_template("dashboard.html", saqr="97",title="ODS" )
 
+@index.route('/guild/716783245387235410')
+def guild_page():
+    return render_template("guild.html", saqr="97",title="ODS" )
+
+@index.route('/tt')
+def tt_page():
+    return render_template("tt.html", saqr="97",title="ODS" )
+
+
 @index.route('/reviews')
 def reviews_page():
     return render_template("reviews.html", saqr="97",title="ODS" )
