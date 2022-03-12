@@ -281,20 +281,56 @@ a{
     font-size: 25px;
 }
 
+.btn-outline-light:hover {
+    color: #f8f9fa;
+    background-color: transparent;
+    border-color: #f8f9fa;
+    display: inline-flex;
+}
 
+.ssss {
+    padding: 0 15px;
+}
 
+.form-check-input {
+    margin-top: 0;
+}
 
+.form-check-input:checked {
+    background-color: darkorchid;
+    border-color: darkorchid;
+}
 
+.form-check-input {
+    background-color: #888888;
+}
 
+.form-check-input:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
 
+.form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
 
+.sfsf {
+    color: #acbbbc;
+    margin-top: 0px;
+}
 
+.ah {
+    text-decoration: underline;
+}
 
+.modal-content {
+    background-color: rgb(39, 41, 52);
+}
 
-
-
-
-
+.btn-close {
+    background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
 
 
 .section {
@@ -467,4 +503,3 @@ a{
 .saqr-footer {
     color: darkorchid;
 }
-

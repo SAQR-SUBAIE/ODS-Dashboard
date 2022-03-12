@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 const publicPath = path.join(__dirname, 'public');
-app.use(express.static("static"));
+// app.use(express.static("static"));
 
 app.use(express.static(publicPath));
 
@@ -25,8 +25,12 @@ app.get('/guild/716783245387235410', (_,resp)=>{
     resp.sendFile(`${publicPath}/guild.html`)
 });
 
-app.get('/tt', (_,resp)=>{
-    resp.sendFile(`${publicPath}/tt.html`)
+app.get('/guild', (_,resp)=>{
+    resp.sendFile(`${publicPath}/guild.html`)
+});
+
+app.get('/admin', (_,resp)=>{
+    resp.sendFile(`${publicPath}/admin.html`)
 });
 
 
