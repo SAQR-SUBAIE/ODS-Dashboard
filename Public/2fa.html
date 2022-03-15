@@ -31,11 +31,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/css/all.min.css" rel="stylesheet">
+    <link href="/static/css/all.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="static/css/style.css" rel="stylesheet">
-    <link href="static/css/media.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/media.css" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
@@ -45,56 +45,86 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script> -->
     <!-- <script src="https://unpkg.com/discord-fetcher@1.0.3/index.min.js"></script> -->
-    <!-- <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <section class="section">
 <!--  -->
 <div class="wrapper">
 <div class="box">
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
 
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
-<div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
 </div>
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container">
-<a class="navbar-brand" href="/"><img src="https://cdn.discordapp.com/attachments/799615725097451570/929359967935418428/5151251252521.png" alt="" width="60px" height="60px" style="border-radius: 50%;"></a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="/"><img src="https://cdn.discordapp.com/attachments/799615725097451570/929359967935418428/5151251252521.png" alt="" width="60px" height="60px" style="border-radius: 50%;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-    <li class="nav-item me-lg-1"><a class="nav-link active saqr" href="#">Commands</a></li>
-    <li class="nav-item me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="#">FAQ</a></li>
-    <li class="nav-item me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="#">Store</a></li>
-    <li class="nav-item me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="#">Items</a></li>
-    <li class="nav-item me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="#">Community</a></li>
-    <li class="nav-item d-lg-none d-block me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="/support">Support</a></li>
+        <li class="nav-item me-lg-1"><a class="nav-link active saqr" href="#">Commands</a></li>
+        <li class="nav-item me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="#">FAQ</a></li>
+        <li class="nav-item me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="#">Store</a></li>
+        <li class="nav-item me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="#">Items</a></li>
+        <li class="nav-item me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="#">Community</a></li>
+        <li class="nav-item d-lg-none d-block me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="#">Support</a></li>
     </ul>
-</div>
+    </div>
     <ul class="navbar-nav ml-auto text-center">
         <li class="nav-item d-none d-lg-block me-lg-1 mx-lg-1"><a class="nav-link active saqr" href="/support">Support</a></li>
-        <li class="nav-item d-block me-lg-1 mx-lg-1"><a class="nav-link active saqr-1 pe-3 px-3" href="/saqr">Login</a></li>
+        <!-- <li class="nav-item d-block me-lg-1 mx-lg-1"><a class="nav-link active saqr-1 pe-3 px-3" href="#">Login</a></li> -->
+        <div class="btn-group d-block me-lg-1 mx-lg-1" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/static/image/avatar.webp" width="25" height="25" class="ims"> <b>ODS</b>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="#">My Servers</a></li>
+            <li><a class="dropdown-item" href="#">Edit My Personal</a></li>
+            <li><a class="dropdown-item" href="#">Billing</a></li>
+            <li><a class="dropdown-item" href="#">Language</a></li>
+            <li><a class="dropdown-item red" href="#">Logout</a></li>
+            </ul>
+        </div>
     </ul>
 </div>
 </nav>
 
 
 
+
+
+
+
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center flex-row-reverse">
+            <h1 class="text-white text-center title">Moderation : <a href="/guild" class="btn primary-1 text-light">back</a></h1>
+        </div>
+        Roles logs
+        Channels logs
+        Voice logs
+        Invites Links logs
+        Boosts logs
+        Messages logs
+        Join and leave log
+    </div>
+</section>
 
 
 
@@ -135,10 +165,10 @@
 
 </section>
 <!-- min js -->
-<script src="static/js/all.min.js"></script>
-<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="/static/js/all.min.js"></script>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
 
-<script src="static/js/script.js"></script>
+<script src="/static/js/script.js"></script>
 
 </body>
 </html>

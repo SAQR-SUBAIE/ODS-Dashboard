@@ -33,6 +33,29 @@ app.get('/admin', (_,resp)=>{
     resp.sendFile(`${publicPath}/admin.html`)
 });
 
+app.get('/logs', (_,resp)=>{
+    resp.sendFile(`${publicPath}/logs.html`)
+});
+
+app.get('/youtube', (_,resp)=>{
+    resp.sendFile(`${publicPath}/youtube.html`)
+});
+
+app.get('/color', (_,resp)=>{
+    resp.sendFile(`${publicPath}/color.html`)
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.get('/reviews', (_,resp)=>{
     resp.sendFile(`${publicPath}/reviews.html`)
