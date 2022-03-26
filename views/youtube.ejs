@@ -1,0 +1,91 @@
+<%- include('./partials/base_1') %>
+
+<!-- Roles logs
+Channels logs
+Voice logs
+Invites Links logs
+Boosts logs
+Messages logs
+Join and leave log -->
+
+
+
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center flex-row-reverse">
+            <h1 class="text-white text-center title"><i class="fa-brands fa-youtube icon"></i> YouTube : <a href="/guild" class="btn primary-1 text-light">back</a></h1>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-md-4 g-3">
+
+            <div class="col">
+                <div class="card bg-dark m-1">
+                    <div class="card-body">
+                        <h1 class="set text-light text-emd st-12">YouTube ID</h1>
+                    </div>
+                    <div class="card-body">
+                        <input class="form-control" type="text" placeholder="YouTube ID" aria-label="default input example">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark m-1">
+                    <div class="card-body">
+                        <h1 class="set text-light text-emd st-12">ENABLED CHANNELS</h1>
+                    </div>
+                    <div class="card-body">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Select ..</option>
+                            <option value="1">Auto Role</option>
+                            <option value="2">Auto Role</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark m-1">
+                    <div class="card-body">
+                        <h1 class="set text-light text-emd st-12">??????????</h1>
+                    </div>
+                    <div class="card-body">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Select ..</option>
+                            <option value="1">{title}</option>
+                            <option value="2">{url}</option>
+                            <option value="3">{description}</option>
+                            <option value="4">{id}</option>
+                            <option value="5">{author}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark m-1">
+                    <div class="card-body">
+                        <h1 class="set text-light text-emd st-12">??????????</h1>
+                    </div>
+                    <div class="card-body">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Select ..</option>
+                            <option value="1">@everyone</option>
+                            <option value="2">@here</option>
+                            <option value="3">@youtube</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<%- include('./partials/footer') %>

@@ -1,0 +1,129 @@
+<%- include('./partials/base_1') %>
+
+
+
+<!-- Roles logs
+Channels logs
+Voice logs
+Invites Links logs
+Boosts logs
+Messages logs
+Join and leave log -->
+
+
+
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center flex-row-reverse">
+            <h1 class="text-white text-center title"><i class="fa-solid fa-palette icon-1"></i> Color : <a href="/guild" class="btn primary-1 text-light">back</a></h1>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-md-4 g-3">
+
+            <div class="col">
+                <div class="card bg-dark m-1">
+                    <div class="card-body">
+                        <h1 class="set text-light text-emd st-12">Color list title</h1>
+                    </div>
+                    <div class="card-body">
+                        <input class="form-control" type="text" value="Color List" aria-label="default input example">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark m-1">
+                    <div class="card-body">
+                        <h1 class="set text-light text-emd st-12">Color backgrounds</h1>
+                    </div>
+                    <div class="card-body">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <!-- <option selected>Select ..</option> -->
+                            <option value="1">Transparent</option>
+                            <option value="2">Specific background</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark m-1">
+                    <div class="card-body">
+                        <h1 class="set text-light text-emd st-12">Color backgrounds</h1>
+                    </div>
+                    <div class="card-body">
+                        <input class="form-control" type="text" value="Link" aria-label="default input example">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <div class="row row-cols-1">
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-header pb-4">
+                            <h1 class="set text-light d-inline-flex h1">/color</h1><br>
+                            <button type="button" class="btn btn-outline-light float-end ssss text-center justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#color">Edit</button>
+                            <div class="form-check form-switch float-end h3 m-0 p-0 ssss text-center justify-content-center align-items-center">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            </div>
+                            <p class="h6 sfsf">Get a list of server Color and member counts.</p>
+                        </div>
+                        <!-- <div class="card-body">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+    
+    
+                <div class="modal fade" id="color" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title text-light gggg" id="exampleModalLabel">EDIT COLOR SETTINGS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        
+                
+                
+                            <div class="modal-header">
+                                <h5 class="modal-title text-light gggg" id="exampleModalLabel">EDIT COLOR SETTINGS</h5>
+                            </div>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Select ..</option>
+                                <option value="1">admin</option>
+                            </select>
+                
+                            <div class="modal-header">
+                                <h5 class="modal-title text-light gggg" id="exampleModalLabel">ENABLED CHANNELS</h5>
+                            </div>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Select ..</option>
+                                <option value="1">cmd-cod</option>
+                                <option value="2">command</option>
+                            </select>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn primary-2 text-light pe-3 px-3 pt-2 pb-2 m-2" id="liveToastBtn" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<%- include('./partials/footer') %>
