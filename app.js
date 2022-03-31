@@ -77,7 +77,29 @@ app.get('/verify', function(req, res) {
     res.render('verify');
 })
 
+app.get('/temp-room', function(req, res) {
+    res.render('temp_room');
+})
 
+app.get('/tickets', function(req, res) {
+    res.render('tickets');
+})
+
+app.get('/rating', function(req, res) {
+    res.render('rating');
+})
+
+app.get('/organizing', function(req, res) {
+    res.render('organizing');
+})
+
+app.get('/giveaways', function(req, res) {
+    res.render('giveaways');
+})
+
+app.get('/submit', function(req, res) {
+    res.render('submit');
+})
 
 // app.get('', function(req, res) {
 //     res.render('');
@@ -99,7 +121,7 @@ app.get('/support', function(req, res) {
 app.get('/:id', function(req, res) {
     console.log(req.params);
     const id = req.params.id;
-    res.render('404', { mytitle: "O.D.S - 404", r404: `${id}`, bottom: "fixed-bottom", ar_en: 'ar', rtl_ltr: 'rtl' });
+    res.render('404', { mytitle: "O.D.S - 404", id: `${id}`, bottom: "fixed-bottom", ar_en: 'ar', rtl_ltr: 'rtl' });
 });
 
 

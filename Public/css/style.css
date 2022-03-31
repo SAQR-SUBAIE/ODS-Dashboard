@@ -206,6 +206,18 @@ a{
     padding-bottom: 30px;
 }
 
+.title::before {
+    content: '';
+    background: var(--hover);
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+    border-radius: 5px;
+}
+
 
 
 .primary {
@@ -654,4 +666,32 @@ a{
 .text {
     font-size: 50px;
     font-weight: 900;
+}
+
+/*  */
+
+.fa-trash {
+    border: 1px solid var(--color);
+    border-radius: 10px;
+    color: rgb(207, 75, 75);
+}
+
+.fa-trash:hover {
+    color: var(--color);
+    background-color: var(--color3);
+}
+
+.error-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-2 {
+    color: var(--bs-danger);
+}
+
+.r404 {
+    border-bottom: 1px solid var(--hover);
+    color: #f14668;
 }

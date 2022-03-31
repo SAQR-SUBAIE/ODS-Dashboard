@@ -1,0 +1,245 @@
+<%- include('./partials/base_1') %>
+
+
+
+
+
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center flex-row-reverse">
+                <h1 class="text-white text-center title"><i class='bx bx-party icon-1'></i> Giveaways : <a
+                        href="/guild" class="btn primary-1 text-light">back</a></h1>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-4 g-3">
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-body">
+                            <h1 class="set text-light text-emd st-12">channel</h1>
+                        </div>
+                        <div class="card-body">
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Select ..</option>
+                                <option value="1">text 1</option>
+                                <option value="2">text 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-body">
+                            <h1 class="set text-light text-emd st-12">prize</h1>
+                        </div>
+                        <div class="card-body">
+                            <input class="form-control" type="text" value="" placeholder="prize"
+                                aria-label="default input example">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-body">
+                            <h1 class="set text-light text-emd st-12">winners</h1>
+                        </div>
+                        <div class="card-body">
+                            <input class="form-control" type="number" value=""
+                                placeholder="How many winners are 1, 2, 4 or 50" aria-label="default input example">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-body">
+                            <h1 class="set text-light text-emd st-12">duration</h1>
+                        </div>
+                        <div class="card-body">
+                            <input class="form-control" type="number" value=""
+                                placeholder="How many seconds is 1, 2, 4, or 60" aria-label="default input example">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--  --> <br><hr id="hr">
+            <div class="card-header">
+                <h1 class="text-white text-center ubmit"><i class='bx bx-party icon-1'></i> commands Giveaways</h1>
+            </div>
+            <div class="row row-cols-1 row-cols-md-1 g-1"><br>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-header pb-4">
+                            <h1 class="set text-light d-inline-flex h1">/gstart</h1><br>
+                            <button type="button"
+                                class="btn btn-outline-light float-end ssss text-center justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#ban">Edit</button>
+                            <div
+                                class="form-check form-switch float-end h3 m-0 p-0 ssss text-center justify-content-center align-items-center">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                            </div>
+                            <p class="h6 sfsf">To create new Giveaways.</p>
+                        </div>
+                        <!-- <div class="card-body">
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-header pb-4">
+                            <h1 class="set text-light d-inline-flex h1">/gend</h1><br>
+                            <button type="button"
+                                class="btn btn-outline-light float-end ssss text-center justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#kick">Edit</button>
+                            <div
+                                class="form-check form-switch float-end h3 m-0 p-0 ssss text-center justify-content-center align-items-center">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                            </div>
+                            <p class="h6 sfsf">To end a specific Giveaways.</p>
+                        </div>
+                        <!-- <div class="card-body">
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-header pb-4">
+                            <h1 class="set text-light d-inline-flex h1">/gcancel</h1><br>
+                            <button type="button"
+                                class="btn btn-outline-light float-end ssss text-center justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#lock">Edit</button>
+                            <div
+                                class="form-check form-switch float-end h3 m-0 p-0 ssss text-center justify-content-center align-items-center">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                            </div>
+                            <p class="h6 sfsf d-fl">To cancel a specific Giveaways.</p>
+                        </div>
+                        <!-- <div class="card-body">
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-header pb-4">
+                            <h1 class="set text-light d-inline-flex h1">/gbanner set</h1><br>
+                            <button type="button"
+                                class="btn btn-outline-light float-end ssss text-center justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#move">Edit</button>
+                            <div
+                                class="form-check form-switch float-end h3 m-0 p-0 ssss text-center justify-content-center align-items-center">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                            </div>
+                            <p class="h6 sfsf">To set the flag of Qaif Away</p>
+                        </div>
+                        <!-- <div class="card-body">
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-header pb-4">
+                            <h1 class="set text-light d-inline-flex h1">/gbanner delete</h1><br>
+                            <button type="button"
+                                class="btn btn-outline-light float-end ssss text-center justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#unlock">Edit</button>
+                            <div
+                                class="form-check form-switch float-end h3 m-0 p-0 ssss text-center justify-content-center align-items-center">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                            </div>
+                            <p class="h6 sfsf">To remove the smell of jive away</p>
+                        </div>
+                        <!-- <div class="card-body">
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-header pb-4">
+                            <h1 class="set text-light d-inline-flex h1">/gbutton</h1><br>
+                            <button type="button"
+                                class="btn btn-outline-light float-end ssss text-center justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#imprisonment">Edit</button>
+                            <div
+                                class="form-check form-switch float-end h3 m-0 p-0 ssss text-center justify-content-center align-items-center">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                            </div>
+                            <p class="h6 sfsf">To change the color of the pause button</p>
+                        </div>
+                        <!-- <div class="card-body">
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-header pb-4">
+                            <h1 class="set text-light d-inline-flex h1">/glist</h1><br>
+                            <button type="button"
+                                class="btn btn-outline-light float-end ssss text-center justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#unimprisonment">Edit</button>
+                            <div
+                                class="form-check form-switch float-end h3 m-0 p-0 ssss text-center justify-content-center align-items-center">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                            </div>
+                            <p class="h6 sfsf">Displays a list of the lists that are currently active on your server.</p>
+                        </div>
+                        <!-- <div class="card-body">
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-dark m-1">
+                        <div class="card-header pb-4">
+                            <h1 class="set text-light d-inline-flex h1">/gparticipants</h1><br>
+                            <button type="button"
+                                class="btn btn-outline-light float-end ssss text-center justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#mute">Edit</button>
+                            <div
+                                class="form-check form-switch float-end h3 m-0 p-0 ssss text-center justify-content-center align-items-center">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                            </div>
+                            <p class="h6 sfsf">To find out who participated in Giveaway.</p>
+                        </div>
+                        <!-- <div class="card-body">
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <%- include('./partials/footer') %>
